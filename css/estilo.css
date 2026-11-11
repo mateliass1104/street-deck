@@ -1,0 +1,178 @@
+/*
+    Projeto: Street Deck - Loja de Skate
+    Arquivo: estilo.css
+    Autores: Mateus Elias e Matheus Machado
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #111111;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header > a {
+    color: #ff6b00;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff6b00;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #111111;
+    border-bottom: 4px solid #ff6b00;
+    padding-bottom: 8px;
+}
+
+h2 {
+    color: #111111;
+}
+
+a {
+    color: #ff6b00;
+}
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipe article {
+    flex: 1 1 250px;
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #111111;
+    color: #ff6b00;
+}
+
+tr:hover td {
+    background-color: #ffe3cf;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+}
+
+input:hover {
+    border-color: #999999;
+}
+
+input:focus {
+    border-color: #ff6b00;
+    background-color: #fff7f0;
+    outline: none;
+}
+
+input:not(:placeholder-shown):invalid {
+    border-color: #dd0000;
+    background-color: #ffeaea;
+}
+
+button {
+    background-color: #ff6b00;
+    color: #111111;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #111111;
+    color: #ff6b00;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 4px solid #ff6b00;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

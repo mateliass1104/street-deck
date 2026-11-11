@@ -1,0 +1,92 @@
+/*
+    Projeto: Street Deck - Loja de Skate
+    Arquivo: tema.css
+    Autores: Mateus Elias e Matheus Machado
+*/
+
+.navbar-brand {
+    color: #ff6b00 !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ff6b00 !important;
+}
+
+.btn-laranja {
+    background-color: #ff6b00;
+    color: #111111;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-laranja:hover {
+    background-color: #111111;
+    color: #ff6b00;
+}
+
+h1 {
+    border-bottom: 4px solid #ff6b00;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    border-color: #ff6b00;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#galeria figure {
+    margin: 0;
+}
+
+#galeria img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#galeria figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #999999;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff6b00 !important;
+    background-color: #fff7f0 !important;
+    box-shadow: none !important;
+}
+
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+    border-color: #dd0000 !important;
+    background-color: #ffeaea !important;
+}
+
+@media (max-width: 768px) {
+    #galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
