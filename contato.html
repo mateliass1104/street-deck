@@ -1,0 +1,93 @@
+<!--
+    Projeto: Street Deck - Loja de Skate
+    Pagina: Contato
+    Autores: Mateus Elias e Matheus Machado
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Deck | Contato</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tema.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">STREET DECK</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skates.html">Skates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pecas.html">Peças</a></li>
+                        <li class="nav-item"><a class="nav-link" href="guia-tamanhos.html">Guia de Tamanhos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="videos.html">Vídeos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrinho.html">Carrinho</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.thrashermagazine.com" target="_blank" rel="noopener noreferrer">Thrasher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section>
+            <h1>Fale com a Street Deck</h1>
+            <p class="lead">Tem dúvida sobre algum produto ou quer fazer um pedido? Mande sua mensagem.</p>
+
+            <div id="aviso"></div>
+
+            <form id="form-contato" class="col-lg-6">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required minlength="3">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone (com DDD)</label>
+                    <input type="text" id="telefone" name="telefone" class="form-control" placeholder="41999999999" required pattern="[0-9]{10,11}" title="Digite 10 ou 11 números, sem espaços ou traços">
+                </div>
+
+                <div class="mb-3">
+                    <label for="assunto" class="form-label">Assunto</label>
+                    <select id="assunto" name="assunto" class="form-select" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida sobre produto</option>
+                        <option value="pedido">Fazer um pedido</option>
+                        <option value="troca">Troca ou devolução</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="form-control" rows="5" placeholder="Escreva sua mensagem" required minlength="10"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar mensagem" class="btn btn-laranja btn-lg">
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 Street Deck. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+</html>
